@@ -14,5 +14,5 @@ def signup(request):
 			return redirect('home')#redirects to homepage
 	else:
 		form=SignUpForm()
-		return render(request,'signup.html',{'form':form})
+	return render(request,'signup.html',{'form':form})
 
