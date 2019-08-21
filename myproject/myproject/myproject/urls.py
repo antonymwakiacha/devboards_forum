@@ -35,6 +35,9 @@ urlpatterns = [
     #url(r'^boards/(?P<pk>\d+)/new/$',views.new_topic,name='new_topic'),
     #path('admin/', admin.site.urls),
      url(r'^admin/', admin.site.urls),
+
+     #template routes for password reset
+     #the template_name parameter is optional  but its good to redefine it so the link between the view and the template be more obvious than just using the defaults
      url(r'^reset/$',
         auth_views.PasswordResetView.as_view(
             template_name='password_reset.html',
@@ -51,4 +54,8 @@ urlpatterns = [
      url(r'^reset/complete/$',
         auth_views.PasswordResetCompleteView.as_view(template_name='password_reset_complete.html'),
         name='password_reset_complete'),
+     url(r'^settings/password/$',auth_views.PasswordChangeView.as_view(template_name='password_change.html'),
+        name='password_change'),
+     url(r'^settings/password/done/$',auth_views.PasswordChangeDoneView.as_view(template_name='password_change_done.html'),
+        name='password_change_done'),
 ]
