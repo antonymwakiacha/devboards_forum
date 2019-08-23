@@ -133,6 +133,6 @@ STATICFILES_DIRS=[
 #     ]
 
 LOGOUT_REDIRECT_URL='home'
-LOGIN_REDIREECT_URL='home'#tells django to redirect the user after a successful login.
+LOGIN_REDIRECT_URL='home'#tells django to redirect the user after a successful login.
 EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
 LOGIN_URL='login'
