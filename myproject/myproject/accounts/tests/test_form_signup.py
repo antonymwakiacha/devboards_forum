@@ -1,3 +1,4 @@
+#test file created to test the SignUpForm
 from django.test import TestCase
 from ..forms import SignUpForm
 

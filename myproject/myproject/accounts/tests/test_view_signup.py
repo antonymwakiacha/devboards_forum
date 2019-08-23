@@ -24,6 +24,7 @@ class SignUpTests(TestCase):
         form = self.response.context.get('form')
         self.assertIsInstance(form, UserCreationForm)
 
+    #test that verifies the HTML inputs
     def test_form_inputs(self):
         '''
         The view must contain five inputs: csrf, username, email,
