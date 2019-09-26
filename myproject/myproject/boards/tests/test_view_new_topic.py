@@ -64,7 +64,7 @@ class  NewTopicTests(TestCase):
 	def test_new_topic_invalid_post_data(self):
 		'''
 		Invalid post data should not redirect
-		THe expected behavior is to show the fom again with validatoon errors
+		THe expected behavior is to show the form again with validation errors
 		'''
 		url=reverse('new_topic',kwargs={'pk':1})
 		response=self.client.post(url,{})
