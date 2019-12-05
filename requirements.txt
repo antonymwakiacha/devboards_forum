@@ -11,7 +11,7 @@ cryptography==2.1.4
 cupshelpers==1.0
 defer==1.0.6
 distro-info==0.18
-Django==2.2.4
+Django==2.2.8
 django-widget-tweaks==1.4.5
 feedparser==5.2.1
 html5lib==0.999999999
