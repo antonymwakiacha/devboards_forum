@@ -38,7 +38,7 @@ openshot-qt==2.4.1
 pexpect==4.2.1
 Pillow==5.1.0
 piston-mini-client==0.7.5
-protobuf==3.0.0
+protobuf==3.18.3
 pycairo==1.16.2
 pycrypto==2.6.1
 pycups==1.9.73
